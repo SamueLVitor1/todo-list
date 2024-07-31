@@ -1,0 +1,59 @@
+.taskContainer {
+  display: flex;
+  justify-content: space-between;
+  max-height: 4.5rem;
+  gap: 14px;
+  align-items: center;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 14px 18px;
+  border-radius: 8px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.CheckboxRoot {
+  background: transparent;
+  min-width: 19.45px;
+  height: 19.45px;
+  border-radius: 999px;
+  display: flex;
+
+  cursor: pointer;
+  border: 2px solid var(--blue);
+}
+
+.CheckboxRoot[data-state="checked"] {
+  background-color: var(--purple);
+  border-color: transparent;
+}
+
+.CheckboxRoot:focus {
+  box-shadow: none;
+}
+
+.CheckboxIndicator {
+  color: var(--gray-100);
+}
+
+.taskText {
+  font-size: 0.875rem;
+  line-height: 140%;
+  flex: 1;
+}
+
+.trashIcon {
+  padding: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.trashIcon:hover {
+  color: var(--danger);
+  background: var(--gray-400);
+}
+
+.textLineThrough {
+  text-decoration: line-through;
+}

@@ -1,0 +1,17 @@
+.emptyTaskContainer {
+  margin-top: 1.5rem;
+  border-top: 1px solid #333333;
+  border-radius: 8px;
+  height: 15.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-300);
+  gap: 1rem;
+}
+
+.emptyTaskContainer svg{
+  width: 3.5rem;
+  height: 3.5rem;
+}
